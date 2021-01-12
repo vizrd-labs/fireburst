@@ -42,8 +42,11 @@ function setup() {
 function draw() {
   switch (scene) {
     case 0:
-      background(220, 0.1);
-      fill(colour);
+      background(220);
+      stroke(h, s, 150);
+      strokeWeight(5);
+      fill(h, s, 200, 0.6);
+      // noFill();
       ellipse(m.x, m.y, 100);
       m.x++;
       m.y++;
@@ -57,10 +60,13 @@ function draw() {
       h = map(m.y, 0, height, 0, 360);
       colour = color(h, s, 200);
       fill(20);
+      noStroke();
       text("Choose a colour by\ntouching the screen", width / 2, 20);
       break;
     case 1:
-      background(220, 0.1);
+      if (!mouseIsPressed) {
+        background(220);
+      }
       fill(colour);
       ellipse(m.x, m.y, 100);
       break;
@@ -74,4 +80,18 @@ function mouseDragged() {
   s = map(m.x, 0, width, 0, 255);
   h = map(m.y, 0, height, 0, 360);
   colour = color(h, s, 200);
+
+  background(colour, 0.1);
+}
+
+function mousePressed() {
+  background(colour, 0.1);
+  scene = 1;
+  m.x = mouseX;
+  m.y = mouseY;
+  s = map(m.x, 0, width, 0, 255);
+  h = map(m.y, 0, height, 0, 360);
+  colour = color(h, s, 200);
+
+  background(colour, 0.1);
 }
