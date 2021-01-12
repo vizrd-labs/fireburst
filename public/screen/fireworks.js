@@ -1,3 +1,5 @@
+// const { text } = require("express");
+
 var cent;
 var r = 10;
 var col, h, scene, colChosen;
@@ -41,6 +43,9 @@ function setup() {
 
 function draw() {
   background(0, 100);
+  fill(200);
+  textSize(30);
+  text("Go to\nfireburst.herokuapp.com\nTo Send Fireworks!", width / 2, 30);
   for (let i = fireWorks.length - 1; i > -1; i--) {
     fireWorks[i].display();
     fireWorks[i].update();
