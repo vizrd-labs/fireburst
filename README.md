@@ -6,7 +6,7 @@ Made by Raunak Sudhakar, as ViZrdLabs.
 
 You need two devices to run it (or atleast two browser windows).
 
-["Controller"][https://fireburst.herokuapp.com/) on: https://fireburst.herokuapp.com/
+["Controller"](https://fireburst.herokuapp.com/) on: https://fireburst.herokuapp.com/
 
 ["Screen"](https://fireburst.herokuapp.com/screen/) on: https://fireburst.herokuapp.com/screen/
 
