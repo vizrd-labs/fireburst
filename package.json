@@ -4,6 +4,7 @@
   "description": "A Server to tell me when to have freworks.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,8 +19,5 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "socket.io": "^3.0.5"
-  },
-  "scripts": {
-   "start": "node index.js"
-	}
+  }
 }
